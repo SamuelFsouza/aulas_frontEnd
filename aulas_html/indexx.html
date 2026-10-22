@@ -4,24 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
+    <style>
+        #topo {
+
+            background-color: blue;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content:  space-between;
+            align-items: center
+            ;
+        }
+
+        #nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        #nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #buscar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 
 </head>
     <body>
 
-     <main>
-        <header>
-            logo
-        </header>
+     
+        <header id="topo">
+            <h2>teste</h2>
 
-        <nav>
+            <nav id="nav">
             <a href="#">inicio</a>
             <a href="#"> cardapio</a>
             <a href="#"> contato</a>
-        </nav>
+            </nav>
+        </header>
+        <main>
 
-        <h3>buscar</h3>
+        
 
-       <article>
+        <h3 id="buscar">buscar</h3>
+
+    
         <section>
             <h1>Destaque</h1>
                 <p>lorem lorem ipsum lorem ipsum lorem ipsum
@@ -39,12 +71,12 @@
             <P>prato</P>
             <P>preco</P>
 
-        </article>
-            <footer>
-                <h3>contato</h3>
-                <p>instagram: Massa fina</p>
-            </footer>
+
         </main>
+         <footer>
+            <h3>contato</h3>
+            <p>instagram: Massa fina</p>
+        </footer>
 
 
 
