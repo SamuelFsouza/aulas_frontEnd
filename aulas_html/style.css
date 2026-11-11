@@ -92,7 +92,7 @@ img:hover {
 
 figcaption {
 
-    font-style:  italic;
+    font-style: italic;
     color: #888;
     margin-top: 10px;
 }
@@ -140,11 +140,16 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+td {
     border: 1px solid #444;
     padding: 15px;
-    background-color: var(--cor-sangue);
     color: white;
+}
+
+th {
+        border-radius: 1px solid #444;
+        padding: 15px;
+        background-color: var(--cor-sangue);
 }
 
 fieldset {
@@ -172,6 +177,46 @@ select {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 4px;
+
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+
+    :focus {
+        outline: none;
+        border-color: var(--cor-zumbi);
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+details {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--cor-sangue);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--cor-zumbi)
+}
+
+details p {
+    margin-top: 15px;
+    color: #bbb;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
 }
 
 
