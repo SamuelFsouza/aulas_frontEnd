@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#fundo {
+body {
     background-color: #1a1a1a;
     color: #e0e0e0;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,13 +16,17 @@
     --cor-zumbi: #2e8b57
 }
 
-#header {
+header {
     background-color: #0000;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+}
+
+header h1 {
+    color: var(--cor-sangue);
 }
 
 #navegacao {
@@ -158,8 +162,8 @@ fieldset {
     border-radius: 8px;
 }
 
-#botao {
-    background-color: var(--cor-sangue);
+#botao{
+    background-color: var(--cor-zumbi);
     color: white;
     padding: 15px 30px;
     border: none;
@@ -167,8 +171,9 @@ fieldset {
     width: 100%;
 }
 #botao:hover {
-    color: var(--cor-sangue);
+    background-color: var(--cor-sangue);
 }
+
  
 input [type="text"] 
 input [type="email"]
@@ -220,3 +225,14 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        gap: 15px   ;
+    }
+
+    #beneficios {
+        flex-direction: column;
+    }
+}
