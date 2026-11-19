@@ -325,3 +325,8 @@
      background-color: var(--cor-texto-base);
      color: var(--cor-fundo-base);
  }
+
+ .destaque-infectado {
+    border: 2px solid var(--cor-sangue);
+    transform: scale(1.02);
+ }
